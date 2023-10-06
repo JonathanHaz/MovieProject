@@ -1,0 +1,158 @@
+
+body {
+    margin: 10px;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 1.6;
+    background-color: #394a5e;
+    background-image: url(../Resources/Pictures/3356678.jpg);
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+p {
+    color: #e2e2e2;
+    font-size: 14px;
+}
+
+
+#container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #18305c; 
+    background-image: url(../Resources/Pictures/tp201-sasi-12.jpg);
+    background-size: cover;
+}
+
+
+ul.skills, ul.hobbies, ul.military {
+    list-style-type: none;
+    padding: 0;
+    animation: slideInFromLeft 1s ease-in-out 
+}
+
+ul.skills li, ul.hobbies li, ul.military li {
+    border: 1px solid #ddd;
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ul.skills li:hover, ul.hobbies li:hover, ul.military li:hover {
+    background-color: #848c94;
+    cursor: pointer;
+}
+
+
+img#profile-pic, #hexagon {
+    position: absolute;
+    width: 30vw;
+    animation: animateMe 8s ease-in-out infinite;
+}
+
+#profile-pic {
+    border-radius: 5%; 
+    bottom: 22rem;
+    right: 3rem;
+}
+
+#hexagon {
+    bottom: 15rem;
+    right: 5rem;
+}
+
+a img {
+    margin: 0 15px; 
+    width: 2vw;
+    transition: transform 0.3s;
+}
+
+a:hover img {
+    transform: translateY(-5px) rotate(5deg); 
+}
+
+a:active img {
+    transform: translateY(-5px) rotate(15deg); 
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 10px 50px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 174, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.nav-links a:active {
+    background-color: rgba(1, 65, 126, 0.815);
+    transform: translateY(2px);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateMe {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+}
+

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(6, 4, 30, .9),rgb(4, 9, 30, .9)),url(../Resources/Pictures/3356678.jpg);
+	background-size:cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: rgba(122, 9, 60, 0.5);
+    position: sticky;
+    top: 0;            
+    z-index: 1000; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+    border-radius: 50px;
+}
+
+.nav-links a:hover {
+    background-color: #7a093cb0;
+    transform: translateY(-2px);
+}
+
+.nav-links a:active {
+    background-color: #7a093c;
+    transform: translateY(2px);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px 50px;  
+    margin-top: 20px;   
+}
+
+.prevNext {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #20307a;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s all;
+    margin-right: 10rem;
+    margin-left: 10rem; 
+}
+
+.prevNext:active {
+    background-color: #7a093c;
+    transform: translatey(2px);
+}
+    
+.heart-icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#page-numbers {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .page-number {
+    text-decoration: none;
+    color: white;
+    background-color: #20307a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .page-number:active {
+    background-color: #7a093c;
+    transform: translatey(2px);
+  }
+  

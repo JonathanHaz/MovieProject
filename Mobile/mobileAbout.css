@@ -1,0 +1,88 @@
+@media (max-width: 1000px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .nav-links {
+      display: none; 
+    }
+  
+    .navbar .logo {
+      height: 40px; 
+    }
+  
+    
+    .menu-icon {
+      display: block;
+      color: white;
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      z-index: 1000;
+    }
+  
+    .nav-links.active a {
+      padding: 10px 20px;
+    }
+  
+    .nav-links.active a:hover {
+      background-color: #7a093cb0;
+      transform: translateY(-2px);
+    }
+  }
+  
+  
+ 
+  @media (max-width: 1000px) {
+   body{
+    overflow-y: auto;
+    overflow-x: hidden;
+   }
+
+    #container {
+        padding: 20px; 
+        width: 90%; 
+        margin: 0 auto; 
+    }
+    
+   
+    ul.skills, ul.hobbies, ul.military {
+        
+        text-align: center; 
+    }
+    
+    ul.skills li, ul.hobbies li, ul.military li {
+        
+        font-size: 14px; 
+        margin-right: 5px; 
+        margin-bottom: 5px;
+        padding: 3px 5px; 
+    }
+    
+    img#profile-pic, #hexagon {
+       display: none;
+    }
+    a img{
+        width: 10vw;
+    }
+  }
+  
+  @media (min-width: 1001px) {
+    .menu-icon{
+      display: none;
+    }
+  }

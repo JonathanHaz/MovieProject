@@ -1,0 +1,100 @@
+body{
+    color: white;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 20px;
+
+}
+
+#search {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; 
+}
+
+#btn {
+    padding: 10px 20px;
+    background-color: rgba(0, 156, 184, 0.9); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+#btn:active {
+    background-color: rgba(0, 127, 150, 0.904);
+    transform: translateY(2px);
+}
+
+
+
+.movie-details-container {
+    display: flex;
+    margin-left: 5%;   
+    margin-top: 50px;  
+    gap: 20px;
+    align-items: start;
+}
+
+.movie-image {
+    height: 650px;     
+    width: 450px;
+    border: 1px solid rgba(122, 9, 60, 1);
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(122, 9, 60, 0.3);
+    
+}
+
+.movie-info {
+    width: 60vw;
+    border-radius: 5px;
+    background-color: rgba(122, 9, 60, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.movie-overview {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.movie-revenue,
+.movie-duration,
+.movie-genres,
+.movie-release-date,
+.movie-actors {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.trailer{
+    width: 500px;
+    height: 300px;
+    margin-left: 20rem;
+    
+    
+}
+
+
