@@ -2,47 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/webicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" href="/webicon.png" type="image/x-icon" />
+    <title>Top Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../homepage/style.css">
-    <link rel="stylesheet" href="../homepage/popular.css">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="popular.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Mobile/mobilePopular.css">
-    <title>Search Movie</title>
+    
 </head>
-<body>
+<body onload="ChangeSelctedMovie()">
     <div class="navbar">
         <img src="../Resources/Pictures/logo.svg" alt="Logo" class="logo">
         <div class="menu-icon" onclick="toggleNavLinks()">
             <i class="fas fa-bars"></i>
           </div>
         <div class="nav-links">
-            <a href="../homepage/index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="../IDPage/idpage.html">ID</a>
             <a href="../aboutPage/about.html">About</a>
-            <a href="search.html">Search</a>
+            <a href="../searchPage/search.html">Search</a>
             <a href="../favoritePage/favorite.html">Favorite</a>
         </div>
-        </div>
-        <div class="search-container">
-            <input type="text" placeholder="Enter Movie Name" id="search">
-            <button type="submit" id="btn">Submit</button>
-        </div>
+    </div>
+  
+    <div id="selectDiv">
+        <h1>Top Movies</h1>
+        <select id="select">
+            <option value="day">Top Movies of the Day</option>
+            <option value="week">Top Movies of the Week</option>
+        </select>
+    </div>
+        <section id="movie-list">
 
-        <section id="movie-list"></section>
-
+        </section>
         <div class="nav-buttons">
             <a class="prevNext" id="previous">&laquo; Previous</a>
             <div id="page-numbers"></div>
             <a class="prevNext" id="next">Next &raquo;</a>
         </div>
-        <script src="search.js"></script>
-        <script src="../homepage/mains.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
+        
+        <script src="popular.js"></script>
+    <script src="mains.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>AOS.init();</script>
 </body>
 </html>
-
