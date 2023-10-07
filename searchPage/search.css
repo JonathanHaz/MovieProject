@@ -20,7 +20,7 @@
 
 #btn {
     padding: 10px 20px;
-    background-color: rgba(0, 156, 184, 0.9); 
+    background-color: rgba(122, 9, 60, 0.7); 
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
@@ -28,7 +28,7 @@
 }
 
 #btn:active {
-    background-color: rgba(0, 127, 150, 0.904);
+    background-color: rgba(122, 9, 60, 0.4);
     transform: translateY(2px);
 }
 

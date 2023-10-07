@@ -1,13 +1,12 @@
 //Default
-for (let j = 0; j < 20; j++) {
-  document.getElementById("movie-list").innerHTML += `
+  document.getElementById("movie-list").innerHTML = `
   <div class='containerDiv'>
   <img src="../Resources/Pictures/Blank_square.svg.png" alt="">
   <p class="maintitle">Title</p>
   <span>Overview</span>
   </div>
   `;
-}
+
 
 const info = {
   method: 'GET',
