@@ -8,7 +8,7 @@ const Day = {
 //Print Top Movies of the Day
 function topDayMovie() {
   fetch(`https://api.themoviedb.org/3/trending/movie/day?language=en-US&page=${numPage}`, Day)
-    .then(response => response.json())
+    .then(response => response.json())    
     .then(data => {
       for (let i = 0; i < data.results.length; i++) {
         const movies = data.results[i];
